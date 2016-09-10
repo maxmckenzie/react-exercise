@@ -4,11 +4,27 @@
   "description": "full stack test hitch",
   "main": "entrypoint.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "Max McKenzie hello@maxmckenzie.uk",
   "license": "MIT",
   "dependencies": {
-    "webpack": "^1.13.2"
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.25.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1"
   }
 }
