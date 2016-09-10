@@ -2,19 +2,14 @@
   "name": "full-stack-test",
   "version": "0.0.1",
   "description": "full stack test hitch",
-  "main": "entrypoint.js",
+  "main": "dist/main.js",
   "scripts": {
     "test": "npm test",
-    "dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "lint": "eslint src/"
   },
   "author": "Max McKenzie hello@maxmckenzie.uk",
   "license": "MIT",
-  "dependencies": {
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.1"
-  },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.14.0",
@@ -22,9 +17,21 @@
     "babel-polyfill": "^6.13.0",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.25.0",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.0.0",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.1",
+    "eslint-plugin-react": "^6.2.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  },
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
   }
 }
