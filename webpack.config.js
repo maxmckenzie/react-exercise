@@ -4,9 +4,10 @@ var webpack = require('webpack');
 module.exports = {
     entry: [
         'babel-polyfill',
+        'webpack-dev-server/client?http://localhost:8080',
+        'webpack/hot/only-dev-server',
         './src/main.js',
-        './src/less/styles.less',
-        'webpack-dev-server/client?http://localhost:8080'
+        './src/less/styles.less'
     ],
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -14,7 +15,8 @@ module.exports = {
         filename: "bundle.js"
     },
     devServer: {
-        contentBase: "./dist"
+        contentBase: "./dist",
+        hot: true
     },
     devtool: 'source-map',
     module: {
