@@ -1,0 +1,14 @@
+{
+  "name": "full-stack-test",
+  "version": "0.0.1",
+  "description": "full stack test hitch",
+  "main": "entrypoint.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Max McKenzie hello@maxmckenzie.uk",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^1.13.2"
+  }
+}
