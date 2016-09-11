@@ -42,13 +42,14 @@
     "webpack-dev-server": "^1.15.1"
   },
   "dependencies": {
+    "chai": "^3.5.0",
+    "enzyme": "^2.4.1",
+    "jsdom": "^9.5.0",
+    "mocha": "^3.0.2",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "swagger-parser": "^3.4.1",
     "request": "^2.74.0",
-    "mocha": "^3.0.2",
-    "jsdom": "^9.5.0",
-    "chai": "^3.5.0",
-    "enzyme": "^2.4.1"
+    "requestify": "^0.2.3",
+    "swagger-parser": "^3.4.1"
   }
 }
