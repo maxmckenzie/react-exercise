@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Data from './components/Data';
+import Data from './components/Data.jsx';
 import parser from './helpers/Parser';
 import logger from './helpers/logger';
 
