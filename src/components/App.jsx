@@ -1,20 +1,22 @@
 /* eslint react/forbid-prop-types: 0 */
 import React from 'react';
 
-function Data({ items = [] }) {
+function App({ items = [] }) {
   return (
     <div>
       {
         items.map((item, key) =>
-          <div className="item" key={key}>{item.title}</div>
+          <div className="details">
+            <div className="title" key={key}>{item.title}</div>
+          </div>
         )
       }
     </div>
   );
 }
 
-Data.propTypes = {
+App.propTypes = {
   items: React.PropTypes.array.isRequired,
 };
 
-export default Data;
+export default App;
