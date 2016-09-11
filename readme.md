@@ -1,4 +1,5 @@
 # React Webpack OpenAPI Parser
+[ ![Codeship Status for maxmckenzie/react-exercise](https://codeship.com/projects/9c0ad400-5a8b-0134-5efc-1e1a7cd1493b/status?branch=master)](https://codeship.com/projects/173187)
 
 Install homebrew
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
