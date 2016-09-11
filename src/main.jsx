@@ -1,21 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Data from './components/Data.jsx';
-import parser from './helpers/Parser';
 import logger from './helpers/logger';
 
-const url = 'https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/api-with-examples.json';
+let items = require('./schemas/sample.json');
 
-logger.info(parser(url));
+Object.keys(items).map(x => items[x])
 
-const items = [
-  {
-    title: 'Some Thing',
-  },
-  {
-    title: 'Some other thing',
-  },
-];
+logger.info(items);
 
 ReactDOM.render(
   <Data items={items} />,

@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "full stack test hitch",
   "main": "dist/main.js",
-  "engines" : { 
-    "node" : "6.0.0" 
+  "engines": {
+    "node": "6.0.0"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js './src/**/*spec.jsx'",
-    "dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline",
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js 'src/**/*spec.jsx'",
+    "dev": "concurrently 'npm run test:watch' 'node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --colors'",
     "lint": "eslint src/",
     "test:watch": "npm run test -- --watch"
   },
@@ -42,17 +42,16 @@
     "react-hot-loader": "^3.0.0-beta.3",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.1"
+    "webpack-dev-server": "^1.15.1",
+    "json-loader": "^0.5.4"
   },
   "dependencies": {
     "chai": "^3.5.0",
+    "concurrently": "^2.2.0",
     "enzyme": "^2.4.1",
     "jsdom": "^9.5.0",
     "mocha": "^3.0.2",
     "react": "^15.3.1",
-    "react-dom": "^15.3.1",
-    "request": "^2.74.0",
-    "requestify": "^0.2.3",
-    "swagger-parser": "^3.4.1"
+    "react-dom": "^15.3.1"
   }
 }

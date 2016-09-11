@@ -25,6 +25,10 @@ module.exports = {
         loader: 'style!css!autoprefixer!less',
       },
       {
+        test: /\.json$/,
+        loader: 'json-loader',
+      },
+      {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         include: path.join(__dirname, 'src'),
