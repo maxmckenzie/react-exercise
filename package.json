@@ -4,9 +4,10 @@
   "description": "full stack test hitch",
   "main": "dist/main.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js 'src/**/*spec.js'",
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js './src/**/*spec.jsx'",
     "dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "test:watch": "npm run test -- --watch"
   },
   "babel": {
     "presets": [
@@ -27,7 +28,6 @@
     "babel-preset-stage-0": "^6.5.0",
     "bluebird": "^3.4.6",
     "css-loader": "^0.25.0",
-    "enzyme": "^2.4.1",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.0.0",
     "eslint-plugin-import": "^1.14.0",
@@ -48,6 +48,7 @@
     "request": "^2.74.0",
     "mocha": "^3.0.2",
     "jsdom": "^9.5.0",
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "enzyme": "^2.4.1"
   }
 }
