@@ -10,6 +10,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js 'src/**/*spec.jsx'",
     "dev": "concurrently 'npm run test:watch' 'node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --colors'",
+    "dev:test": "concurrently 'npm run test:watch' 'node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --colors'",
     "lint": "eslint src/",
     "test:watch": "npm run test -- --watch"
   },
