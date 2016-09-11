@@ -2,8 +2,12 @@
 import { shallow } from 'enzyme';
 import Data from './Data.jsx';
 
+// let items = require('./schemas/sample.json');
+// Object.keys(items).map(x => items[x])
+
 describe('Data', () => {
   const props = {
+    //TODO add correct items props here
     items: [{ title: 'x' }, { title: 'y' }],
   };
   it('shows two elements', () => {
