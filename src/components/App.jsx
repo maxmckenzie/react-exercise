@@ -6,9 +6,7 @@ function App({ items = [] }) {
     <div>
       {
         items.map((item, key) =>
-          <div className="details">
-            <div className="title" key={key}>{item.title}</div>
-          </div>
+          <div className="info__title" key={key}>{item.title}</div>
         )
       }
     </div>
