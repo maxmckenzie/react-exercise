@@ -6,18 +6,12 @@ import Paths from './Paths';
 import Definitions from './Definitions';
 
 function App({ items = [] }) {
-  logger.info(this);
   return (
     <div>
-      {
-        items.map((item, key) =>
-          <div className="info__title" key={key}><h1>{item.title}</h1></div>
-        )
-      }
       <div>
-        <Info/>
-        <Paths/>
-        <Definitions/>
+        <Info info={items[1]}/>
+        <Paths paths={items[6]}/>
+        <Definitions definitions={items[7]}/>
       </div>
     </div>
   );
