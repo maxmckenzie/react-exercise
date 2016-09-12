@@ -1,6 +1,5 @@
 import React from 'react';
 import logger from '../helpers/logger';
-import JsonTable from 'react-json-table';
 
 function Paths({ paths = [] }) {
   logger.info(paths);
