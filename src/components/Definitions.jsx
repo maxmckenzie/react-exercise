@@ -1,10 +1,13 @@
 import React from 'react';
 import logger from '../helpers/logger';
 
-function Paths() {
+function Definitions({ definitions = [] }) {
+  // logger.info(definitions);
   return (
-    <div className="definitions">definitions</div>
-  )
+    <div>
+      {definitions.toString()}
+    </div>
+  );
 }
 
-export default Paths;
+export default Definitions;
